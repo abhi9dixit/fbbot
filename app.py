@@ -14,8 +14,8 @@ from chatterbot.trainers import ListTrainer
 import os
 bot= ChatBot("Bot")
 bot.set_trainer(ListTrainer)
-for files in os.listdir('zchatbot:/chatterbot-corpus-master\chatterbot_corpus\data\english/'):
-    data = open('zchatbot:/chatterbot-corpus-master\chatterbot_corpus\data\english/' + files, 'r').readlines()
+for files in os.listdir('zchatbot:/chatterbot-corpus-master/chatterbot_corpus/data/english/'):
+    data = open('zchatbot:/chatterbot-corpus-master/chatterbot_corpus/data/english/' + files, 'r').readlines()
     bot.train(data)
 
 # while True:
